@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Flexigrid</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/flexigrid.pack.css" />
+        <script type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/flexigrid.pack.js"></script>
+    </head>
+    <body>
+ 
+        <h1 class="title" style="display: none">
+            <strong>Flexigrid</strong> for jQuery<span
+                style="font-size: 12px">by Paulo P. Marinas</span>
+        </h1>
+
+
+
+        <h2>Example 4</h2>
+        <p>
+            Flexigrid with dynamic data, paging, search, toolbar, and connected to a php-session based JSON file.
+        </p>
+
+        <table class="flexme4" style="display: none"></table>
+
+
+
+
+        <script type="text/javascript">
+
+
+            $(".flexme4").flexigrid({
+                url : 'http://localhost/proyectoMovilitzer/webservice/index.php/movilitzer/obtenerCanciones',
+                dataType : 'json',
+                colModel : [ {
+                    display : 'id',
+                    name : 'id',
+                    width : 90,
+                    sortable : true,
+                    align : 'center'
+                    }, {
+                        display : 'artista',
+                        name : 'artista',
+                        width : 120,
+                        sortable : true,
+                        align : 'left'
+                    }, {
+                        display : 'cancion',
+                        name : 'cancion',
+                        width : 120,
+                        sortable : true,
+                        align : 'left'
+                    } ],
+
+                sortname : "id",
+                sortorder : "asc",
+                usepager : true,
+                title : 'canciones',
+                useRp : true,
+                rp : 15,
+                showTableToggleBtn : true,
+                width : 750,
+                height : 200
+            });
+
+          
+        </script>
+    </body>
+</html>

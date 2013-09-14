@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>JavaScript MP3 ID3 Tag Reader</title>
+<style type="text/css">
+.label {
+  text-align: right;
+  padding-right: 10px;
+}
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="ID3Reader.js"></script>
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+  window.reader = new ID3Reader($("#the_file")[0]);
+  reader.onload = function(tag) {
+    console.log(tag);
+    if(!tag) {
+      console.log("Unable to read ID3 Tag of file");
+      return false;
+    }
+    $("#results").html('');
+    $("#results").append('<table>');
+    $("#results").append('<tr><td class="label"><strong>Artist:</strong></td><td>' + tag.artist + '</td></tr>');
+    $("#results").append('<tr><td class="label"><strong>Title:</strong></td><td>' + tag.title + '</td></tr>');
+    $("#results").append('<tr><td class="label"><strong>Album:</strong></td><td>' + tag.album + '</td></tr>');
+    $("#results").append('<tr><td class="label"><strong>Year:</strong></td><td>' + tag.year + '</td></tr>');
+    $("#results").append('<tr><td class="label"><strong>Comment:</strong></td><td>' + tag.comment + '</td></tr>');
+    $("#results").append('<tr><td class="label"><strong>Track:</strong></td><td>' + tag.track + '</td></tr>');
+    $("#results").append('<tr><td class="label"><strong>locacion:</strong></td><td>' + $("#the_file").val() + '</td></tr>');
+    $("#results").append('<tr><td class="label"><strong>Genre:</strong></td><td>' + tag.genre + '</td></tr>');
+    $("#results").append('<tr><td class="label"><strong>Genre:</strong></td><td>' + filePath + '</td></tr>');
+
+
+    $("#results").append('</table>');
+
+  };
+});
+</script>
+</head>
+<a href="../index.html">Principal</a> |
+<a href="../mostrarMusicaDisponible.html">Toda la musica</a> |
+<a href="#">Agregar cancion</a> |
+<a href="../listaReproduccion.html">Lista de reproduccion</a>
+<body>
+<h1>MP3 ID3 Tag Reader Test</h1>
+
+<div><input type="file" id="the_file"/></div>
+<div>&nbsp;</div>
+<div id="results" >
+  
+</div>
+
+<form name="myform" method="post" action="http://localhost/proyectoMovilitzer/webservice/index.php/movilitzer/recibirDatos">
+
+<input type="text" name="artista" id="artista">
+<input type="text" name="cancion" id="cancion">
+<input type="text" name="genero" id="genero">
+<input type="text" name="duracion" id="duracion">
+<input type="text" name="estado" id="estado">
+<input type="text" name="url" id="url">
+
+
+<button><a href="javascript: submitform()">Submit</a></button>
+</form>
+
+
+
+<script type="text/javascript">
+function submitform()
+{
+  document.myform.submit();
+}
+</script>
+
+<script type="text/javascript">
+
+    $(function()
+    {
+        $('#the_file').on('change',function ()
+        {
+            var filePath = $(this).val();
+            //console.log(filePath);
+            console.log($(this));
+        });
+    });
+
+</script>
+
+</body>
+
+</html>

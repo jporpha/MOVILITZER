@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>Agregar Musica</title>
+<style type="text/css">
+.label {
+  text-align: right;
+  padding-right: 10px;
+}
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="ID3Reader.js"></script>
+
+
+
+
+<script type="text/javascript">
+
+</script>
+</head>
+<a href="../index.html">Principal</a> |
+<a href="../mostrarMusicaDisponible.html">Toda la musica</a> |
+<a href="#">Agregar cancion</a> |
+<a href="../listaReproduccion.html">Lista de reproduccion</a>
+<body>
+<h1>Agrege una cancion a la musica disponible</h1>
+
+<form name="myform" method="post" action="http://localhost/proyectoMovilitzer/webservice/index.php/movilitzer/recibirDatos">
+<div><input type="file" id="myfile" name="myfile" multiple /></div>
+<div id="results" >
+  
+</div>
+
+
+
+
+
+<button><a href="javascript: submitform()">Submit</a></button>
+</form>
+
+
+
+<script type="text/javascript">
+
+
+
+  window.reader = new ID3Reader($("#myfile")[0]);
+  reader.onload = function(tag) {
+    console.log(tag);
+var nombre = $("#myfile").val().split('\\').pop();
+
+    if(!tag) {//si no lo logra leer
+          $("#results").html('');
+    $("#results").append('<table>');
+    $("#results").append('<tr><td class="label"><strong>Artist:</strong></td><td><input type="text" name="artista" id="artista" value="'+nombre+'"></td></tr>');
+    $("#results").append('<tr><td class="label"><strong>Title:</strong></td><td><input type="text" name="cancion" id="cancion"value="'+nombre+'"></td></tr>');
+    $("#results").append('<tr><td class="label"><strong>Genre:</strong></td><td><input type="text" name="genero" id="genero" value="Genre"></td></tr>');
+    $("#results").append('<tr><td class="label"><strong>locacion:</strong></td><td><input type="text" disabled ="true" name="url" id="url" value="'+nombre+'"></td></tr>');
+    $("#results").append('</table>');
+
+
+    }else{
+      $("#results").html('');
+    $("#results").append('<table>');
+    $("#results").append('<tr><td class="label"><strong>Artist:</strong></td><td><input type="text" name="artista" id="artista" value="'+tag.artist+'"></td></tr>');
+    $("#results").append('<tr><td class="label"><strong>Title:</strong></td><td><input type="text" name="cancion" id="cancion"value="'+tag.title+'"></td></tr>');
+    $("#results").append('<tr><td class="label"><strong>Genre:</strong></td><td><input type="text" name="genero" id="genero" value="'+tag.genre+'"></td></tr>');
+    $("#results").append('<tr><td class="label"><strong>locacion:</strong></td><td><input type="text" disabled ="true" name="url" id="url" value="'+nombre+'"></td></tr>');
+    $("#results").append('</table>');
+
+    }
+    
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function submitform()
+{
+  
+  document.myform.submit();
+
+}
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html id="demohtml" xmlns="http://www.w3.org/1999/xhtml" class="testdrive">
+<head>
+    <!-- Copyright © Microsoft Corporation. All Rights Reserved. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />    
+    <title>HTML5 Audio Player + XML Playlist</title>
+    <link rel="shortcut icon" href="../../includes/image/favicon.ico" />
+    <meta name="description" content="A simple audio player built using HTML5 Audio and improved XML support." />
+    <link rel="Stylesheet" type="text/css" href="../../Includes/Styles/OldTestDrive.css" />
+    <script type="text/javascript" src="../../Includes/Script/FeatureDetection.js" data-detect="svg"></script>  
+    <link rel="stylesheet" type="text/css" href="../../Includes/Styles/ReturnAndShareControls.css" />
+    <script type="text/javascript" src="testdrive.js"></script>   
+    <style id="inlinecss" title="democss" type="text/css">/*<![CDATA[*/
+
+        @namespace playlist "http://www.contoso.com/playlist";
+        playlist|playlist {
+	        counter-reset: song;
+        }
+        playlist|song {
+	        min-width: 450px;
+        }
+        playlist|song:nth-child(odd) {
+	        background-color: #ade;
+        }
+        playlist|song:nth-child(even) {
+	        /*background-color: #fe6;*/
+	        background-color: #bef;
+        }
+        playlist|song[playing] {
+	        background-color: #fd0;
+        }
+        playlist|song:first-child {
+	        border-radius: 20px 20px 0 0;
+	        -moz-border-radius: 20px 20px 0 0;
+	        -webkit-border-top-left-radius: 20px;
+	        -webkit-border-top-right-radius: 20px;
+	        border-top: 2px solid #555;
+        }
+        playlist|song:last-child {
+	        border-radius: 0 0 20px 20px;
+	        -moz-border-radius: 0 0 20px 20px;
+	        -webkit-border-bottom-left-radius: 20px;
+	        -webkit-border-bottom-right-radius: 20px;
+	        border-bottom: 2px solid #555;
+        }
+        playlist|song {
+	        border-left: 2px solid #555;
+	        border-right: 2px solid #555;
+	        cursor: pointer;
+	        display: block;
+	        padding: 10px;
+        }
+        playlist|song:hover {
+	        background-color: #ffc;
+        }
+        playlist|title {
+	        display: block;
+	        font-weight: bold;
+        }
+        playlist|title:before {
+	        content: counter(song) ". ";
+	        counter-increment: song;
+        }
+        playlist|artist {
+	        display: block;
+	        font-style: italic;
+	        margin-left: 16px;
+        }
+        playlist|artist:before {
+	        content: "Artist: ";
+        }
+        playlist|location {
+	        display: none;
+        }
+
+
+        #playerContainer {
+	        background-color: rgba(0,0,0,0.2);
+	        border-radius: 50px;
+	        clear: both;
+	        -moz-border-radius: 50px;
+	        -webkit-border-radius: 50px;
+	        margin-top: 2em;
+	        margin-bottom: 1em;
+	        min-height: 400px;
+	        padding: 20px;
+        }
+        #player {
+	        display: table;
+	        width: 100%;
+        }
+        #playlistContainer {
+	        display: table-cell;
+	        vertical-align: top;
+        }
+        #controlsContainer {
+	        display: table-cell;
+	        vertical-align: top;
+	        width: 500px;
+	        text-align: center;
+        }		
+
+        .shortcut {
+	        float: left; 
+	        margin-left: 4em;
+        }
+
+        .source {
+	        border: 1px solid #999;
+	        border-radius: 10px;
+	        -moz-border-radius: 10px;
+	        -webkit-border-radius: 10px;
+	        width: 100%;
+	        height: 780px;
+	        margin: 0;
+	        padding: 0;
+        }
+
+	
+        button {
+	        background-color: #33c;
+	        color: #eee;
+        }
+        audio {
+	        display: none;
+        }
+        .control {
+	        fill: #555;
+	        opacity: 0;
+	        cursor: pointer;
+        }
+        .control:hover {
+	        fill: #fd0;
+        }
+        svg:hover .control {
+	        opacity: 1;
+        }
+        #scrollingText {
+	        font-family: calibri, arial, sans-serif;
+	        font-size: 14px;
+        }
+        /*]]>*/
+    </style>
+    <meta name="t_omni_demopage" content="1" />
+</head>
+<body id="demobody">
+    <div id="fullbodywrap">
+        <div id="ReturnAndShareControls"></div>
+        <table id="headertable" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td class="heading">
+                    <h1 id="demobodyh1">HTML5 Audio Player + XML Playlist</h1>
+                </td>
+                <td id="demodescription">
+                    <div>A simple audio player built using the &lt;audio&gt; element and IE9's improved XML support</div>
+                </td>
+            </tr>
+        </table>
+        <div id="demoactions">
+        </div>
+        <div id="demoContentCenterer">
+            <div id="demoContentWrapper">
+                <p>
+                    <b>Keyboard Shortcuts:</b>
+                    <ul>
+                        <li class="shortcut"><em>Spacebar</em> = Play/Pause</li>
+                        <li class="shortcut"><em>Left Arrow</em> = Rewind</li>
+                        <li class="shortcut"><em>Right Arrow</em> = Fast Forward</li>
+                        <li class="shortcut"><em>Up Arrow</em> = Previous Song</li>
+                        <li class="shortcut"><em>Down Arrow</em> = Next Song</li>
+                    </ul>
+                </p>
+                <div id="playerContainer">
+                    <div id="player">
+                        <div id="playlistContainer">(Loading...)</div>
+                        <div id="controlsContainer"></div>
+                    </div>
+                </div>
+                <p>
+                    Aside from the use of the &lt;audio&gt; element, this demo demonstrates how elements from XML and HTML documents can be mixed.
+                    <ol>
+                        <li>This page is stored as an HTML file</li>
+                        <li>The playlist is stored as an XML file</li>
+                        <li>The XML file is loaded into an &lt;iframe&gt;</li>
+                        <li>Script removes the root XML element from the &lt;iframe&gt; and inserts it into the HTML document</li>
+                        <li>Script attaches mouse event handlers to the XML elements to add interactivity</li>
+                        <li>CSS in the HTML document applies to the inserted XML elements automatically</li>
+                    </ol>
+                </p>
+                <p>Playlist XML:<br /><iframe class="source" frameborder="0" src="assets/playlist_xslt.xml"></iframe>
+                </p>
+                <script>
+
+                    var XHTML_NS = "http://www.w3.org/1999/xhtml";
+                    var PLAYLIST_NS = "http://www.contoso.com/playlist";
+
+                    var audio = null;
+                    var trackText;
+
+                    function main() {
+                        loadPlaylist("assets/playlist.xml");
+                        loadControls("eplayer.svg");
+                        setInterval(drawFrame, 10);
+                    }
+
+                    function drawFrame() {
+                        if (audio && trackText) {
+                            var elapsed = audio.currentTime;
+                            /*
+                            var position = 100 - 20 * elapsed;
+                            if(position < 25) position = 25;
+                            trackText.setAttribute("startOffset", position + "%");
+                            */
+                            progressText.textContent = Math.round(elapsed) + "s";
+                        }
+                    }
+
+                    function loadDOM(url, callback) {
+                        var frame = document.createElementNS(XHTML_NS, "iframe");
+                        frame.src = url;
+                        frame.style.display = "none";
+                        frame.onload = function () { callback(frame.contentDocument) };
+                        document.body.appendChild(frame);
+                    }
+
+                    function loadPlaylist(url) {
+                        loadDOM(
+			url,
+			function (doc) {
+			    var playlist = doc.documentElement;
+			    document.adoptNode(playlist);
+			    initPlaylist(playlist);
+			}
+		);
+                    }
+
+                    function loadControls(url) {
+                        loadDOM(
+			url,
+			function (doc) {
+			    var controls = doc.documentElement;
+			    document.adoptNode(controls);
+			    document.getElementById("controlsContainer").appendChild(controls);
+			    var controlList = ["prev", "rewind", "play", "pause", "forward", "next"];
+			    for (var i = 0; i < controlList.length; i++) {
+			        initControl(controlList[i]);
+			    }
+			    trackText = document.getElementById("track");
+			    progressText = document.getElementById("progress");
+			}
+		);
+                    }
+
+                    function initControl(id) {
+                        var control = document.getElementById(id);
+                        var handler = window[id];
+                        control.onclick = handler;
+                        control.setAttribute("class", "control");
+                    }
+
+                    function initPlaylist(playlist) {
+                        var playListContainer = document.getElementById("playlistContainer");
+                        playListContainer.removeChild(playListContainer.firstChild);
+                        playListContainer.appendChild(playlist);
+                        registerSongListeners(document.getElementsByTagNameNS(PLAYLIST_NS, "song"));
+                    }
+
+                    function registerSongListeners(songs) {
+                        for (var i = 0; i < songs.length; i++) {
+                            addSelectSongListener(songs[i]);
+                        }
+                    }
+
+                    function addSelectSongListener(song) {
+                        song.addEventListener("click", function () { selectSong(song) }, false);
+                    }
+
+                    function selectSong(song) {
+                        if (!song) return;
+                        var location = song.getElementsByTagNameNS(PLAYLIST_NS, "location")[0].textContent;
+                        if (audio) {
+                            audio.pause();
+                            audio.parentNode.removeChild(audio);
+                            audio._song.removeAttribute("playing");
+                        }
+                        audio = document.createElement("audio");
+                        audio._song = song;
+                        audio._song.setAttribute("playing", "true");
+                        audio.setAttribute("autoplay", "autoplay");
+                        audio.setAttribute("src", location);
+                        document.body.appendChild(audio);
+                        /*
+                        trackText.textContent = "Now Playing: " 
+                        + song.getElementsByTagNameNS(PLAYLIST_NS, "title")[0].textContent 
+                        + " by "
+                        + song.getElementsByTagNameNS(PLAYLIST_NS, "artist")[0].textContent;
+                        */
+                    }
+
+                    function play() {
+                        if (!audio) selectSong(document.querySelector("song"));
+
+                        try {
+                            audio.play();
+                        } catch (e) {
+                            // audio issue, fail silently
+                        }
+                    }
+
+                    function pause() {
+                        if (!audio) return;
+                        try {
+                            audio.pause();
+                        } catch (e) {
+                            // audio issue, fail silently
+                        }
+                    }
+
+                    function rewind() {
+                        if (!audio) return;
+                        try {
+                            audio.currentTime -= 1.0;
+                        } catch (e) {
+                            // audio issue, fail silently
+                        }
+                    }
+
+                    function forward() {
+                        if (!audio) return;
+                        try {
+                            audio.currentTime += 1.0;
+                        } catch (e) {
+                            // audio issue, fail silently
+                        }
+                    }
+
+                    function prev() {
+                        if (!audio) return;
+                        selectSong(audio._song.previousElementSibling);
+                    }
+
+                    function next() {
+                        if (!audio) return;
+                        selectSong(audio._song.nextElementSibling);
+                    }
+
+                    function togglePlay() {
+                        if (!audio) selectSong(document.querySelector("song"));
+                        if (!audio) return;
+                        if (audio.paused) play();
+                        else pause();
+                    }
+
+                    function handleKey(e) {
+                        switch (e.keyCode) {
+                            case 32: togglePlay(); e.preventDefault(); break; // Spacebar
+                            case 37: rewind(); e.preventDefault(); break; // Left Arrow
+                            case 39: forward(); e.preventDefault(); break; // Right Arrow
+                            case 38: prev(); e.preventDefault(); break; // Up Arrow
+                            case 40: next(); e.preventDefault(); break; // Down Arrow
+                        }
+                    }
+
+                    window.addEventListener("keydown", handleKey, false);
+                    window.addEventListener("load", main, false);
+                </script>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../includes/script/TestDriveCommon.js"></script>
+    <script type="text/javascript" src="../../Includes/Script/ReturnAndShareControls.js"></script>
+</body>
+</html>

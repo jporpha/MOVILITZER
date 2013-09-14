@@ -1,0 +1,3129 @@
+#dialogo {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	color: #09F;
+	
+}
+#dialogo #comentario {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 20px;
+	font-style: italic;
+	color: #333;
+	margin-right: auto;
+	margin-left: auto;
+}
+a:hover {
+		color: orange;
+	}
+
+a.azul{
+	color:#09F;	
+}
+
+#verRutas #personal table tr td {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+#verRutas {
+	width: 1150px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#cerrarSesion table {
+	width: 1200px;
+	font-size: 14px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#detalleRutaDia #form3 table tr td #rutMerc {
+	width: 100px;
+}
+#detalleRutaDia #form3 table tr td #diaSelec {
+	width: 110px;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#subTituloRojo {
+	color: #900;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	text-decoration: underline;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+#subTituloVerde {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	text-decoration: underline;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	color: #099;
+	text-align: left;
+}
+#subTituloAmarillo {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	text-decoration: underline;
+	text-align: left;
+	color: #C90;
+}
+
+#wrapper {
+	width: 1200px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	_width: 1200px;
+	_margin-top: 10px;
+	_margin-right: auto;
+	_margin-left: auto;
+}
+
+
+#wrapper_m {
+	width: 300px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	_width: 300px;
+	_margin-top: 10px;
+	_margin-right: auto;
+	_margin-left: auto;
+}
+
+
+
+#logo {
+	height: 150px;
+	_height: 150px;
+}
+
+
+#cuerpo {
+	background-color: #FFF;
+	_background-color: #FFF;
+	border-style: none solid solid;
+	border-width: medium 1px 1px;
+	border:1px solid #bd21bf;
+}
+
+#cuerpo_m {
+	background-color: #FFF;
+	_background-color: #FFF;
+}
+
+#TituloPagina {
+	width: 500px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	color: #09F;
+	margin-right: auto;
+	margin-left: auto;
+	text-decoration: underline;
+}
+
+
+#TituloPagina .sin{
+	width: 500px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	color: #09F;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+#cuerpo #Solicitud {
+	height: 100px;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#cuerpo #Solicitud table {
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 90px;
+	font-size: 18px;
+	color: #09F;
+	text-align: center;
+}
+#cuerpo #fechas {
+	height: 50px;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	color: #999;
+}
+#cuerpo #fechas table {
+	height: 50px;
+	width: 700px;
+	font-size: 18px;
+	color: #09F;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: center;
+	background-color: #999;
+}
+/*==========================================formLog==============================================================*/
+#formLog {
+	width: 450px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 180px;
+	background-image: url(Imagenes/iniciarSesion.png);
+	
+}
+#formLog form table {
+	height: 170px;
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+#formLog form table tr td #UserType {
+	width: 200px;
+	font-size: 16px;
+}
+#formLog form table tr td #UserName {
+	width: 200px;
+	font-size: 18px;
+}
+#formLog form table tr td #UserPass {
+	width: 200px;
+	font-size: 18px;
+}
+/*==========================================formLog==============================================================*/
+
+#RecContra {
+	background-color: #FFF;
+	height: 50px;
+	width: 280px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#RecContra table {
+	height: 50px;
+	width: 280px;
+	font-size: 18px;
+}
+
+#loadingPerfil {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-size: 24px;
+	color: #06F;
+}
+
+#loadingPerfil_m {
+	width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-size: 12px;
+	color: #813192;
+}
+
+#menubar {
+	background-color: #333;
+	height: 35px;
+	_background-color: #333;
+	_height: 35px;
+}
+#iconoAdm {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#iconoAdm table {
+	height: 200px;
+	width: 700px;
+	font-size: 24px;
+	color: #06F;
+	text-align: center;
+}
+#Alertas {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#Alertas #TituloAlerta {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #F00;
+	text-align: left;
+}
+#Alertas #cuerpoAlerta {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #000;
+	text-align: left;
+}
+#sel_vend {
+	height: 50px;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 18px;
+	color: #09F;
+	background-color: #FFF;
+}
+#sel_vend #form1 table {
+	height: 50px;
+	width: 600px;
+}
+#asignarSpvr {
+	height: 350px;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(Imagenes/fondoSPVR.gif);
+}
+#asignarSpvr #form1 #notificar {
+	font-size: 18px;
+	color: #06F;
+}
+#asignarSpvr #titulo {
+	font-size: 20px;
+	color: #09F;
+	width: 570px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	height: 60px;
+}
+#subTituloPag {
+	width: 1050px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 50px;
+	color: #999;
+	text-align: left;
+}
+
+
+#cuerpo #SubTitulo {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #09F;
+}
+#asignarSpvr #parte1 {
+	height: 70px;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#asignarSpvr #parte1 table {
+	height: 70px;
+	width: 500px;
+	font-size: 18px;
+	color: #06F;
+}
+#cuerpo #TituloPag {
+	font-size: 30px;
+	color: #09F;
+	width: 1100px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#cuerpo #TituloPag.videos {
+	font-size: 20px;
+	color: #09F;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	border:1px solid #09F;
+	background:#F7F7F7;
+	padding:5px;
+}
+
+#cuerpo #TituloPag p.video {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #333;
+}
+
+#cuerpo #TituloPag span.subT {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: orange;
+}
+
+#asignarSpvr #form1 #parte2 {
+	height: 100px;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#asignarSpvr #form1 #parte2 table {
+	height: 100px;
+	width: 500px;
+	font-size: 18px;
+	color: #06F;
+}
+#boxParte1 {
+	width: 200px;
+}
+#boxParte2 {
+	width: 100px;
+}
+#asignarSpvr #form1 #notificar {
+	width: 570px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#LinkDetalles {
+	width: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 18px;
+}
+h3 {
+	font-size: 14px;
+}
+#zona_vndr {
+	height: 250px;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#zona_vndr form table {
+	height: 130px;
+	width: 500px;
+	font-size: 20px;
+	color: #09F;
+}
+#notificar {
+	width: 500px;
+	font-size: 16px;
+	color: #06F;
+}
+#zona_vndr form #alerta {
+	height: 40px;
+	color: #C03;
+	font-size: 18px;
+}
+#nomLocal {
+	height: 35px;
+	width: 740px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#cuerpo #horario {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #999;
+	height: 135px;
+}
+#horario #botones {
+	height: 30px;
+}
+#horario #botones table {
+	width: 800px;
+	height: 30px;
+}
+#cuerpo #coment {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 18px;
+	color: #666;
+}
+#horario #horas table {
+	width: 800px;
+	text-align: center;
+	font-size: 18px;
+	color: #FFF;
+	height: 80px;
+}
+#nomLocal table {
+	height: 32px;
+	width: 720px;
+	font-size: 18px;
+	color: #09F;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#FiltroBusqueda form table tr td #listaLocales {
+}
+#cuerpo #Merca {
+	height: 45px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(Imagenes/fondoMerc2.png);
+}
+#Merca #Tabla #Merc table tr td #TipoMerc {
+	width: 100px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+#cuerpo #Merca #Tabla {
+	height: 35px;
+	width: 780px;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#infoRuta {
+	height: 230px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(Imagenes/fondoRuta.gif);
+}
+#espacio {
+	height: 15px;
+}
+
+
+#Merc table tr td #nomMerc {
+	width: 200px;
+	font-size: 16px;
+	color: #000;
+}
+#Merc table tr td #rutMerc {
+	width: 100px;
+	font-size: 16px;
+}
+#Merc table tr td #tipoMerc {
+	width: 100px;
+	font-size: 16px;
+}
+
+
+#cuerpo #FiltroBusqueda {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 18px;
+	color: #09F;
+}
+#FiltroBusqueda table {
+	width: 900px;
+	font-size: 18px;
+	color: #06F;
+}
+#FiltroBusqueda form table tr td #listaLocales {
+	width: 400px;
+	font-size: 16px;
+}
+#FiltroBusqueda form table tr td #idLocal {
+	width: 150px;
+	font-size: 16px;
+}
+#cuerpo #TituloBusqueda {
+	font-size: 24px;
+	color: #06F;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#Merca #Tabla #Merc table {
+	color: #FFF;
+	font-size: 18px;
+}
+#espacio2 {
+	height: 8px;
+}
+#horas #form1 table tr td #lun {
+	width: 70px;
+}
+#cuerpo #horario #EditComment {
+	height: 40px;
+}
+#cuerpo #horario #EditComment table {
+	height: 40px;
+	width: 800px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #FFF;
+	text-align: center;
+}
+#cuerpo #horario #EditComment table tr td #comentario {
+	height: 35px;
+	width: 445px;
+}
+#nomLocal table tr td #nombreLocal {
+	width: 600px;
+	font-size: 16px;
+}
+#nomLocal table tr td #idLocal {
+	width: 100px;
+	font-size: 16px;
+}
+#nomLocal table tr td #Filtro {
+	width: 150px;
+	font-size: 14px;
+}
+#cuerpo #agregarMerca {
+	height: 50px;
+	width: 350px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#cuerpo #agregarMerca table {
+	width: 350px;
+	height: 50px;
+	font-size: 24px;
+	color: #06F;
+	text-align: center;
+}
+#Merc table tr td #EstadoMerc {
+	width: 100px;
+	font-size: 12px;
+}
+#reemplazo #form1 table tr td table tr td #dato {
+	width: 180px;
+}
+#cuerpo #cuerpoCF {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 70px;
+	background-color: #CCC;
+}
+#cuerpo #cuerpoCF table {
+	height: 70px;
+	width: 600px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #000;
+	margin-right: auto;
+	margin-left: auto;
+}
+#cuerpoCF table tr td #dias {
+	width: 100px;
+	font-size: 14px;
+}
+#cuerpoCF table tr td #monto {
+	width: 100px;
+	font-size: 14px;
+}
+#cuerpoCF table tr td #horas {
+	font-size: 14px;
+	width: 100px;
+}
+#estado_mecaderista form table tr td table tr td #cantidad2 {
+	width: 70px;
+}
+
+#estado_mecaderista form table tr td table tr td #resultado {
+	width: 120px;
+}
+#cuerpoCF table tr td #dias2 {
+	font-size: 14px;
+	width: 100px;
+}
+#cuerpoCF table tr td #reuniones {
+	font-size: 14px;
+	width: 100px;
+}
+#cuerpoCF table tr td #Locales {
+	width: 380px;
+}
+#HextrasMerc {
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 24px;
+	color: #333;
+}
+#HextrasMerc table {
+	width: 600px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #09F;
+}
+#HextrasMerc table tr td #cantidad {
+	width: 100px;
+}
+#FichaSolicitud {
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#FichaSolicitud #locales {
+	background-color: #CCC;
+}
+#FichaSolicitud #locales table {
+	width: 550px;
+	font-size: 15px;
+	height: 28px;
+	background-color: #CCC;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-right: auto;
+	margin-left: auto;
+}
+#FichaSolicitud #nombreMerc {
+	height: 30px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #FFF;
+	font-size: 18px;
+	background-color: #2e90bc;
+}
+#FichaSolicitud #nombreMerc table {
+	width: 550px;
+	height: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#FichaSolicitud #nombreMerc table tr td #rut {
+	width: 140px;
+	font-size: 18px;
+}
+#FichaSolicitud #locales table tr td #locales {
+	width: 370px;
+	background-color: #FFF;
+}
+#FichaSolicitud #comentario {
+	height: 55px;
+	background-color: #CCC;
+}
+#FichaSolicitud #comentario table {
+	width: 550px;
+	height: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+#FichaSolicitud #detalle {
+	background-color: #CCC;
+}
+#FichaSolicitud #detalle table {
+	width: 550px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#FichaSolicitud #detalle table tr td #Fecha {
+	width: 100px;
+}
+#FichaSolicitud #detalle table tr td #monto {
+	width: 100px;
+}
+#FichaSolicitud #detalle table tr td #horai {
+	width: 100px;
+}
+#FichaSolicitud #detalle table tr td #horaf {
+	width: 100px;
+}
+#FichaSolicitud #comentario table tr td #coment {
+	width: 300px;
+	font-size: 14px;
+	color: #000;
+	height: 40px;
+}
+#FichaSolicitud #respuesta {
+	background-color: #2e90bc;
+	color: #FFF;
+}
+#FichaSolicitud #respuesta table {
+	width: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	text-align: left;
+}
+#FichaSolicitud #respuesta table tr td #resp {
+	height: 45px;
+	width: 300px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+#cuerpo #Merca #Tabla #Merc table tr td #ListMercderistas {
+	width: 350px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+#fichaCierre {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#fichaCierre #infoPersonal {
+	background-color: #999;
+}
+#fichaCierre #infoPersonal table {
+	width: 700px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14px;
+	background-color: #999;
+	margin-right: auto;
+	margin-left: auto;
+}
+#fichaCierre #datos {
+	background-color: #999;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #FFF;
+}
+#fichaCierre #datos table {
+	width: 650px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 14px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+#enviarCierre {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 16px;
+	color: #06F;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#enviarCierre table {
+	width: 500px;
+}
+#DialogoRechazo {
+	width: 460px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background-color: #CCC;
+	color: #09F;
+	font-size: 18px;
+}
+#DialogoRechazo #form2 p #spv {
+	width: 100px;
+	margin-left: 5px;
+}
+#DialogoRechazo #form2 p #respuesta {
+	height: 50px;
+	width: 450px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#DialogoRechazo #form2 p #rechazar {
+	margin-right: auto;
+	margin-left: auto;
+}
+#reporteErrores {
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	color: #09F;
+	font-size: 18px;
+}
+#reporteErrores table {
+	width: 400px;
+}
+#detalleRutaDia {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	color: #09F;
+}
+#detalleRutaDia #form3 table {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+#detalleRutaDia #form3 table tr td #idLocal2 {
+	width: 80px;
+}
+#detalleRutaDia #form3 table tr td #entrada {
+	width: 80px;
+}
+#detalleRutaDia #form3 table tr td #salida {
+	width: 80px;
+}
+#ResumenCF {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#ResumenCF table {
+	width: 900px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	height: 80px;
+	color: #FFF;
+}
+#solTrans {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #09F;
+}
+#solTrans table {
+	width: 700px;
+	height: 90px;
+}
+#solTrans table tr td #razon {
+	width: 190px;
+	margin-left: 8px;
+}
+#solTrans table tr td #supervisor {
+	width: 190px;
+	margin-left: 8px;
+}
+#solTrans table tr td #dia {
+	width: 50px;
+	margin-left: 8px;
+}
+#solTrans table tr td #mes {
+	width: 100px;
+}
+#solTrans table tr td #ano {
+	width: 70px;
+}
+#solTrans table tr td #fechaFin {
+	width: 120px;
+	margin-left: 8px;
+}
+#solTrans table tr td #sector {
+	width: 120px;
+	margin-left: 8px;
+}
+#SolTranscoment {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #d7d7d6;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #09F;
+}
+#SolTranscoment table {
+	height: 70px;
+	width: 700px;
+}
+#SolTranscoment table tr td #detalle {
+	width: 360px;
+	margin-left: 8px;
+}
+#estadoET {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: #666;
+	color: #FFF;
+}
+#estadoET table tr td table {
+	height: 80px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#estadoET table tr td table tr td #nombre {
+	width: 250px;
+}
+#estadoET table tr td table tr td #apellido {
+	width: 250px;
+}
+#estadoET table tr td table tr td #rut3 {
+	width: 250px;
+}
+#estadoET table tr td table tr td #idpeticion {
+	width: 50px;
+}
+#SolTranscoment table tr td #detalle {
+	width: 220px;
+}
+
+/*----------------------------------------Plantilla 2 Cierres fijos------------------------------------------------*/
+#InformacionMercaderista {
+	height: 28px;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #666;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+#InformacionMercaderista table tr td {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #FFF;
+}
+#InformacionMercaderista table tr td #nombre2 {
+	width: 140px;
+}
+#InformacionMercaderista table tr td #rut4 {
+	width: 100px;
+}
+#InformacionMercaderista table tr td #tipo {
+	width: 120px;
+}
+#InformacionMercaderista table tr td #estado {
+	width: 100px;
+}
+#informacionCF {
+	height: 80px;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #CCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#informacionCF table {
+	height: 80px;
+	width: 680px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#informacionCF table tr td #gasAsigMov {
+	width: 70px;
+}
+#informacionCF table tr td #gasFijoMov {
+	width: 70px;
+}
+#informacionCF table tr td #montoRendir {
+	width: 70px;
+}
+#informacionCF table tr td #DiasTrabajados {
+	width: 70px;
+}
+#informacionCF table tr td #reuniones {
+	width: 70px;
+}
+#informacionCF table tr td #identificador {
+	width: 70px;
+}
+
+/*---------------------------------------- Fin Plantilla 2 Cierres fijos------------------------------------------------*/
+#volverAtras {
+	height: 30px;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#volverAtras table {
+	height: 30px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #09F;
+}
+#horarioRuta table {
+	height: 60px;
+	width: 700px;
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #999;
+	text-align: center;
+	font-size: 16px;
+}
+#horarioRuta table tr td #opcionHora {
+	width: 60px;
+}
+#comentRuta table {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFF;
+	background-color: #999;
+}
+#comentRuta table tr td #comentText {
+	width: 350px;
+	height: 40px;
+}
+#SistAlerta table tr td {
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #000;
+	background-color: #CCC;
+}
+#SistAlerta #siglas table {
+	background-color: #FFF;
+	font-family: "Arial Black", Gadget, sans-serif;
+	text-align: left;
+}
+#UsuarioIncorrecto table {
+	text-align: center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #900;
+}
+
+#UsuarioIncorrecto_m table {
+	text-align: center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #300;
+}
+#operacionCorrecta center table {
+	text-align: center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #903;
+}
+#modificarDatos {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#modificarDatos #form4 table {
+	text-align: center;
+}
+#modificarDatos #form4 table tr td #idusuario {
+	width: 50px;
+	font-size: 14px;
+	height: 20px;
+}
+#modificarDatos #form4 table tr td #nombre {
+	width: 170px;
+	height: 20px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-size: 14px;
+}
+#modificarDatos #form4 table tr td #apellido {
+	width: 170px;
+	height: 20px;
+	margin-top: 2px;
+	margin-left: 2px;
+}
+#CostosFijos {
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#CostosFijos #form1 table {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color: #FFF;
+}
+#CostosFijos #form1 table tr td #idcosto {
+	width: 50px;
+	font-size: 14px;
+}
+#CostosFijos #form1 table tr td #valorCosto {
+	font-size: 14px;
+	width: 120px;
+}
+#Adv_Merca {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#Adv_Merca table {
+	color: #09F;
+}
+#AsignarDotacion {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #CCC;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #FFF;
+}
+#pasarExcel {
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 18px;
+}
+#modificarInformacion {
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#modificarInformacion #form6 table tr td table tr td #contrasena {
+	width: 200px;
+}
+#modificarInformacion #form6 table tr td table tr td #supervisor2 {
+	width: 130px;
+}
+#modificarInformacion #form6 table tr td table tr td #celular {
+	width: 250px;
+}
+#modificarInformacion #form6 table tr td table tr td #email {
+	width: 250px;
+}
+#AsignarDotacion #form5 table tr td #sectores {
+	width: 70%;
+}
+#AsignarDotacion #form5 table tr td center #jc {
+	width: 80px;
+}
+#AsignarDotacion #form5 table tr td center #mj {
+	width: 80px;
+}
+#AsignarDotacion #form5 table tr td center #pt {
+	width: 80px;
+}
+#nomLocal table tr td #rutmerc {
+	width: 130px;
+}
+#pie {
+	width: 1100px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#pie table {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #999;
+	text-align: left;
+}
+#newRutaColacion {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#newRutaColacion table tr td {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #03F;
+	font-size: 18px;
+}
+#swapMerc {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#swapMerc #form8 table tr td #nomMerc {
+}
+#AdvertSwap {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#AdvertSwap table {
+	color: #03F;
+}
+#verRutas #listaRuta table {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#verRutas #resumentm table {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+}
+#filtroMerc form {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #09F;
+	text-align: left;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.visit a {
+	color: #FFF;
+}
+.visit a:hover {
+	color: #FFF;
+	color: #C63;
+}
+#estado_mecaderista table tr td table {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	height: 60px;
+}
+#resumenCierre #informacion table tr td {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background-color: #CCC;
+}
+#resumenCierre a{
+color:#C60;	
+}
+#resumenCierre a:hover{
+color:#F60;	
+}
+#resumenCierre #detalle table tr td {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#resumenCierre #titulo {
+	text-align: left;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFF;
+}
+#solicitudHE {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#solicitudHE #tabla {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#EstadoSolHE table tr td #solicitud {
+	width: 280px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 3px;
+	background-color: #CCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-bottom: 0px;
+}
+#detalleHE {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#detalleHE table {
+	color: #09F;
+}
+#back {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #09F;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+
+#back a{
+	color:#09F;	
+}
+
+#back a:hover{
+	color:orange;	
+}
+#motivoRechazoCierre {
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	background-color: #CCC;
+}
+#mostrarAlertas {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	text-align: left;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#wrapper #cuerpo #estado_mecaderista form table tr td table tr td #verificar {
+	font-size: 14px;
+	width: 50px;
+	color: #06F;
+}
+#totales {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#totales table tr td {
+	text-align: center;
+	color: #FFF;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+#estadisticas {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#estadisticas #farmacias {
+	width: 500px;
+}
+#estadisticas #supermercado {
+	width: 500px;
+}
+#finiquitar {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#finiquitar2 table {
+	color: #FFF;
+	text-align: center;
+}
+#finiquito #finiquitar table tr td {
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+	color: #FFF;
+}
+
+#finiquitar2 {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#finiquito #finiquitar2 table tr td {
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+	color: #FFF;
+}
+#stAzul {
+	text-align: left;
+	width: 900px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	text-decoration: underline;
+	margin-right: auto;
+	margin-left: auto;
+	font-weight: normal;
+	color: #0C9;
+}
+#peticionesET {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#peticionesET table tr td {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: left;
+	font-size: 14px;
+}
+#ingresarET {
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+#ingresarET #form2 table tr td {
+	color: #FFF;
+	text-align: left;
+}
+#ingresarET #form2 table tr td #textfield {
+	width: 200px;
+}
+
+#asignaciones {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#menu_mobile table {
+	font-size: 22px;
+	text-align: left;
+}
+#menu_mobile table tr td a {
+	color: #09F;
+}
+#list_he_sol {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#form1 #list_he_sol table {
+	text-align: center;
+}
+#modificarDatos table #form4 tr td #nombre {
+
+	width: 170px;
+	font-size: 16px;
+}
+#modificarDatos table tr td {
+	text-align: center;
+}
+#modificarDatos2 {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#modificarDatos2 table #form4 tr td #nombre {
+	margin-right: auto;
+	margin-left: auto;
+	height: 25px;
+	width: 170px;
+}
+#modificarDatos2 table  {
+	text-align: center;
+}
+#titulo_grafico {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	text-align: left;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	text-decoration: underline;
+	color: #333;
+}
+#bajar_excel {
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#usuariosSistema {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#usuariosSistema table #form2 tr td #textfield {
+	width: 130px;
+}
+#usuariosSistema table #form2 tr td #dv {
+	width: 25px;
+}
+#usuariosSistema table #form2 tr td #rut {
+	width: 100px;
+}
+#usuariosSistema table {
+	text-align: center;
+}
+#noticias {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+#Tablas_JQ {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#Tablas_JQ a:hover{
+    color:orange;	
+}
+
+#exportarExcel {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 24px;
+	color:#999
+}
+#exportarExcel a {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #06F;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 24px;
+}
+#exportarExcel img {
+	padding: 5px;
+}
+
+
+#exportarExcel a:hover {
+	color: orange;
+}
+#alerta {
+	text-align: left;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	
+	font-size: 20px;
+}
+
+
+#alerta img {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+#alerta table tr td p {
+	color: #333;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#tigger img {
+	padding: 0px;
+	vertical-align: middle;
+
+}
+#tigger #datepicker {
+	height: 15px;
+	padding: 0px;
+	vertical-align: middle;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 15px;
+	color: #03F;
+}
+
+#tigger #fecha_sol {
+	
+	vertical-align: middle;
+	font-family: "Times New Roman", Times, serif;
+	height: 25px;
+	font-size: 18px;
+	color: #333;
+	
+}
+
+
+#tigger #fecha_sol.redondo {
+	border: 2px solid #b40499;
+}
+
+
+
+#tigger #otro1 {
+	height: 15px;
+	padding: 0px;
+	vertical-align: middle;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 15px;
+	color: #03F;
+}
+#sub_titulo_800 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #939;
+	text-align: left;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#sub_titulo_800 img {
+	padding: 5px;
+}
+
+#tigger #otro2 {
+	height: 15px;
+	padding: 0px;
+	vertical-align: middle;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 15px;
+	color: #03F;
+}
+
+#tigger #otro3 {
+	height: 15px;
+	padding: 0px;
+	vertical-align: middle;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 15px;
+	color: #03F;
+}
+
+
+
+#acciones_inasistencia {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#acciones_inasistencia img {
+	padding: 5px;
+}
+
+#acciones_inasistencia a {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #06F;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 24px;
+}
+
+#acciones_inasistencia a.disable {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #999;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 24px;
+}
+
+#acciones_inasistencia a:hover {
+	
+	color: orange;
+
+}
+
+
+
+#acciones_inasistencia2 {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#acciones_inasistencia2 img {
+	padding: 5px;
+}
+
+#acciones_inasistencia2 a {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #06F;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 24px;
+}
+
+#acciones_inasistencia2 a.disable {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #999;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 24px;
+}
+
+#acciones_inasistencia2 a:hover {
+	
+	color: orange;
+
+}
+
+#alerta_vacio {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	color: #F60;
+	text-align: left;
+}
+#acciones_inasistencia  p {
+	font-size: 24px;
+	color: #CCC;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+/* Navigation */
+.nav, .nav ul { 
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav {
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 100;
+  position: relative;
+}
+.nav li {
+  border-left: 1px solid #bd21bf;
+  border-top: 1px solid #bd21bf;
+  border-bottom: 1px solid #bd21bf;
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.nav li.fin {
+  border: 1px solid #bd21bf;
+
+}
+.nav li a, .nav li a:link, .nav li a:active, .nav li a:visited { /*propiedades cuadro inicial*/
+  font: bold 1.22em/25px Arial, Helvetica, sans-serif;
+  background: #f2f2f2; 
+  color: #999;
+  display: block;
+  padding: 0 9px;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  background: #df5ef6;
+  color: #F00;	
+
+}
+#nav-one li:hover a, 
+#nav-one li.sfHover a {
+  background: #df5ef6;
+  color: #FFF;
+}
+
+
+/*sub-bloques*/
+
+#nav-one li:hover ul a, 
+#nav-one li.sfHover ul a {
+  background: #f2f2f2;
+  color: #999;	
+}
+#nav-one li:hover ul a:hover, 
+#nav-one li.sfHover ul a:hover {
+  background: #df5ef6;
+  color: #FFF;	
+}
+
+.nav ul {
+  background: red;
+  border-bottom: 1px solid #bd21bf;
+  list-style: none;
+  margin: 0;
+
+  position: absolute;
+  top: -999em;
+  left: -1px;
+}
+.nav li:hover ul,
+.nav li.sfHover ul {
+  top: 25px;
+}
+
+.nav ul li {
+  border: 0;
+  float: none;
+}
+.nav ul a {
+  border: 1px solid #bd21bf;
+  border-bottom: 0;
+  padding-right: 20px;
+
+  white-space: nowrap;
+}
+.nav ul a:hover {
+  background: #ccc;
+  color: #000;
+}
+
+
+/* ================================================================ 
+MENU CSS
+=================================================================== */
+
+
+.preload1 {background: url(Imagenes/menu/blank_over.gif);}
+.preload2 {background: url(Imagenes/menu/blank_overa.gif);}
+
+#navmenu {padding:0; margin:0; list-style:none; height:36px; background:#fff; position:relative; z-index:500; font-family:arial, verdana, sans-serif;}
+#navmenu li.top {display:block; float:left;}
+#navmenu li a.top_link {display:block; float:left; height:36px; line-height:27px; color:#ccc; text-decoration:none; font-size:18px; font-weight:bold; padding:0 0 0 12px; cursor:pointer;background: url(Imagenes/menu/blank.gif);}
+#navmenu li a.top_link span {float:left; display:block; padding:0 24px 0 12px; height:36px;background:url(Imagenes/menu/blank.gif) right top;}
+#navmenu li a.top_link span.down {float:left; display:block; padding:0 24px 0 12px; height:36px; background:url(Imagenes/menu/blanka.gif) no-repeat right top;}
+#navmenu li a.top_link:hover {color:#fff; background: url(Imagenes/menu/blank_over.gif) no-repeat;}
+#navmenu li a.top_link:hover span {background:url(Imagenes/menu/blank_over.gif) no-repeat right top;}
+#navmenu li a.top_link:hover span.down {background:url(Imagenes/menu/blank_overa.gif) no-repeat right top;}
+
+#navmenu li:hover > a.top_link {color:#fff; background: url(Imagenes/menu/blank_over.gif) no-repeat;}
+#navmenu li:hover > a.top_link span {background:url(Imagenes/menu/blank_over.gif) no-repeat right top;}
+#navmenu li:hover > a.top_link span.down {background:url(Imagenes/menu/blank_overa.gif) no-repeat right top;}
+
+/* Default list styling */
+
+#navmenu li:hover {position:relative; z-index:200;}
+
+/* keep the 'next' level invisible by placing it off screen. */
+#navmenu ul, 
+#navmenu li:hover ul ul,
+#navmenu li:hover ul li:hover ul ul,
+#navmenu li:hover ul li:hover ul li:hover ul ul,
+#navmenu li:hover ul li:hover ul li:hover ul li:hover ul ul
+{position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none;}
+
+#navmenu li:hover ul.sub
+{left:0; top:31px; background: #fff; padding:3px; border:1px solid #3a93d2; white-space:nowrap; width:130px; height:auto; z-index:300;}
+#navmenu li:hover ul.sub li
+{display:block; height:20px; position:relative; float:left; width:130px; font-weight:normal;}
+#navmenu li:hover ul.sub li a
+{display:block; font-size:15px; height:20px; width:130px; line-height:20px; text-indent:5px; color:#000; text-decoration:none;}
+#navmenu li ul.sub li a.fly
+{background:#fff url(Imagenes/menu/arrow.gif) 80px 7px no-repeat;}
+#navmenu li:hover ul.sub li a:hover 
+{background:#3a93d2; color:#fff;}
+#navmenu li:hover ul.sub li a.fly:hover
+{background:#3a93d2 url(Imagenes/menu/arrow_over.gif) 80px 7px no-repeat; color:#fff;}
+
+#navmenu li:hover ul li:hover > a.fly {background:#3a93d2 url(Imagenes/menu/arrow_over.gif) 80px 7px no-repeat; color:#fff;} 
+
+#navmenu li:hover ul li:hover ul,
+#navmenu li:hover ul li:hover ul li:hover ul,
+#navmenu li:hover ul li:hover ul li:hover ul li:hover ul,
+#navmenu li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul
+{left:90px; top:-4px; background: #fff; padding:3px; border:1px solid #3a93d2; white-space:nowrap; width:90px; z-index:400; height:auto;}
+
+/* ================================================================ 
+MENU CSS
+=================================================================== */
+center #agregarLocal {
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	text-align: center;
+}
+#agregarLocal a {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #09F;
+}
+
+#agregarLocal a:hover {
+	color: orange;
+}
+#locales #local  table {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 22px;
+}
+#locales #textLabel {
+	font-size: 16px;
+	width: 300px;
+}
+#locales  #box {
+	font-size: 16px;
+	width: 300px;
+}
+#acciones_inasistencia table p1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 36px;
+	color: #903;
+	text-decoration: underline;
+}
+#acciones_inasistencia #dato {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 24px;
+	color: #09F;
+}
+#Tablas_JQ #container #tf_user {
+	background-color: #936;
+}
+
+
+
+#myBox {
+	border: 1px solid #ff0000;
+	padding: 10px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+	-ms-border-radius: 10px; /* IE 8.*/
+}
+
+.myBox1 {
+
+    background-color: #ECEFF5;    
+
+}
+
+.myBox1b {
+
+    background-color: #dbe4f6;
+	border: 1px solid #333;    
+
+}
+
+
+.myBox2 {
+
+    background-color: #333; 
+	border: 2px solid #FFF;
+	width:99%; 
+	margin-right: auto;
+	margin-left: auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+	-ms-border-radius: 10px; /* IE 8.*/  
+   
+}
+#newModifRuta {
+	border: 1px solid #09F;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+	-ms-border-radius: 10px; /* IE 8.*/
+}
+#newModifRuta  table {
+	padding: 5px;
+	margin: 5px;
+}
+#newModifRuta #tf1 {
+	font-size: 16px;
+	width: 90%;
+	
+}
+#newModifRuta  #entrada {
+	color: #C0C;
+}
+#newModifRuta  #salida {
+	color: #03F;
+}
+
+#newModifRuta #tf1.azul {
+	color: #333;
+	font-size: 14px;
+	border: 1px solid #09F;
+}
+#newModifRuta  #tfH {
+	padding: 3px;
+	margin: 3px;
+	width: 90%;
+}
+#newModifRuta  #comentario {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-style: italic;
+	color: #333;
+}
+
+#newModifRuta #tfH.entrada {
+	
+	color: #909;
+	font-size: 11px;
+	border: 1px solid #909;
+}
+
+#newModifRuta #tfH.salida {
+	
+	color: #00F;
+	font-size: 11px;
+	border: 1px solid #00F;
+}
+
+
+#newModifRuta  a {
+	color: white;
+}
+
+#newModifRuta  a:hover {
+	color: orange;
+}
+#cuerpo .ejemplo3 {
+	color: #03F;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #F00;
+}
+#alerta_msj {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #000;
+	border: 1px solid #F00;
+	background-color: #F5A9A9;
+}
+
+#alerta_msj.redondo {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px; /* IE 8.*/
+}
+#tallas {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #09F;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	color: #09F;
+	background-color: #F7F7F7;
+}
+.bordearEsquinas {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px; /* IE 8.*/
+}
+#tallas img {
+	padding: 4px;
+}
+
+
+#tallas table {
+	color: #333;
+	text-align:left;
+}
+
+#tallas table a{
+	color: #09F;
+}
+
+#tallas table a.rojo{
+	color: #900;
+}
+#tallas table a.rojo:hover{
+	color: #F00;
+}
+
+#tallas table a:hover{
+	color: orange;
+}
+#tallas #LM {
+	width: 70px;
+}
+
+#generar_solicitudes {
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+
+#generar_solicitudes.titulo {
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	border-top: 1px solid #999;
+	border-bottom:1px solid #999;
+	background:#EBEBEB;
+}
+
+#generar_solicitudes.cuerpo {	
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	border-bottom:1px solid #999;
+	background:#F7F7F7;
+}
+
+
+
+
+#generar_solicitudes table {
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#generar_solicitudes table.titulo_solicitud {
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#generar_solicitudes table img {
+	padding: 3px;
+	
+}
+
+
+#generar_solicitudes table.titulo_solicitud p.tipo {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 20px;
+	color: #F60;
+	text-decoration: underline;
+}
+
+#generar_solicitudes table.titulo_solicitud p.nombre {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	color: #333;	
+}
+
+#generar_solicitudes table.titulo_solicitud p.rut {
+	font-size: 16px;
+	color: #09F;	
+}
+#generar_solicitudes.cuerpo #datos_solicitud table span.accion {
+	font-size: 14px;
+	color: #C00;
+	vertical-align: bottom;
+	font-weight: bold;
+}
+#generar_solicitudes #datos_solicitud  #cantidad {
+	width: 70px;
+	border: 2px solid #b40499;
+	height: 25px;
+	font-size: 18px;
+}
+#generar_solicitudes #datos_solicitud  #comentario {
+	font-style: italic;
+	color: #333;
+	border: 1px solid #666;
+}
+
+#generar_solicitudes.cuerpo #datos_solicitud table p.label {
+	font-size: 14px;
+	color: #909;
+	vertical-align: bottom;
+	font-weight: bold;
+}
+
+#Tablas_JQ #demo #tablaJQ {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#Tablas_JQ #demo #tablaJQ  #textfield.grande {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	width: 100%;
+	border: 1px solid #999;
+	background:#FFC;
+}
+
+#Tablas_JQ #demo #tablaJQ  #textfield.rut {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	width: 85%;
+	border: 1px solid #999;
+	background:#F7F7F7;
+	color: #09F;
+}
+
+#Tablas_JQ #demo #tablaJQ  #textfield.dv {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	width: 100%;
+	border: 1px solid #999;
+	background:#F7F7F7;
+	color:#03F;
+}
+#Tablas_JQ #container #demo #tablaJQ p.ocultar {
+	font-size: 0px;
+}
+
+#Tablas_JQ #demo #tablaJQ  #textfield.mail {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	width: 97%;
+	border: 1px solid #999;
+	background:#E2E2E2;
+	color:#333;
+	margin: 3px;
+}
+
+#Tablas_JQ #demo #tablaJQ a:hover{
+color:orange;	
+}
+
+#usuarios #Tablas_JQ #container #demo #tablaJQ p.header {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	border: 1px solid #09F;
+	background:#E2E2E2;
+}
+#barra_nav {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+#barra_nav span{
+	border: 1px solid #00F;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	padding: 3px;
+}
+#barra_nav span.s1 {
+	
+	color: #06F;
+	background-color: #FFF;
+	
+}
+
+#barra_nav span.s2 {
+	border: 1px solid #00F;
+	color: #06F;
+	background-color: #FFC;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	padding: 3px;
+}
+
+#barra_nav span a {
+	color: #06F;
+	text-decoration:none;
+	
+}
+
+#barra_nav span a:hover {
+	color: orange;
+}
+#TituloPag p u .verde {
+	color: #903;
+}
+
+#TituloPag p u .verde:hover {
+	color: orange;
+}
+
+#TituloPag p u .red {
+	color: #F00;
+}
+
+#TituloPag p u .red:hover {
+	color: orange;
+}
+
+#div400 {
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#div500 {
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#div600 {
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+#div700 {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+
+#div800 {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#div900 {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#div1000 {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#div1100 {
+	width: 1150px;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+
+#divNoticia{
+	width:96%;
+	height: 96%;
+	margin-right: auto;
+	margin-left: auto;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:18px;
+	font-style: italic;
+}
+
+.bordeAzul {
+	border: 1px solid #09F;
+}
+
+table.center90 {
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+a:link{
+text-decoration: none; 	
+}
+
+a:visited{
+text-decoration: none; 	
+}
+a:active{
+text-decoration: none; 	
+}
+
+span a:link {
+text-decoration: none; 
+color:#06F;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+font-size: 15px;
+}
+span a:visited {
+text-decoration: none; 
+color:#06F;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+font-size: 15px;	
+	}
+
+span a:hover{
+color:orange;
+text-decoration:none;	
+}
+
+span.cnt18fbd0 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #333;
+}
+
+
+
+span.cnt24fbd0 {/*Color Tamaño Fondo Decoracion*/
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 28px;
+	color: #333;
+}
+
+span.crt14fbdn {/*Color Tamaño Fondo Decoracion*/
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #F00;
+}
+
+span.cnt14fbdn {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000;
+}
+
+
+span.cvt12fbdn {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #C3C;
+	font-weight: bold;
+}
+
+span.cat16fbd0 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #09F;
+	vertical-align: middle;
+	
+}
+
+span.cat22fbd0 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	color: #09F;
+	vertical-align: middle;
+	
+}
+
+
+
+span.azul14 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #09F;
+}
+
+span.azul16 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #09F;
+}
+
+span.azul20 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #09F;
+}
+
+span.azul24 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #09F;
+}
+
+
+span.azul35 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 35px;
+	color: #FFF;
+	background:#3366CC;
+}
+
+
+span.amarillo30 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	color: #FFF;
+	background:#FC0;
+}
+
+
+span.orange35 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 35px;
+	color: #FFF;
+	background:#FF8000;
+}
+
+span.ft{
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	background:#F90;		
+}
+
+span.pt{
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	background:#09F;		
+}
+
+span.mj{
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	background:#333;		
+}
+
+
+td.azul14{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background:#3e71ef;
+	text-align:center;
+	font-weight: bold;	
+}
+
+td.verde14{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background:#390;
+	text-align:center;
+	font-weight: bold;	
+}
+
+td.negro14{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background:#333;
+	text-align:center;
+	font-weight: bold;	
+}
+
+td.rojo14{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background:#F00;
+	text-align:center;
+	font-weight: bold;	
+}
+
+td.amarillo14{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background:#FC0;
+	text-align:center;
+	font-weight: bold;	
+}
+
+td.plomo14{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background:#999;
+	text-align:center;
+	font-weight: bold;	
+}
+
+/*COLORES SPAN*/
+
+
+
+span.negro14 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000;
+}
+
+span.negro16 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+
+span.negro20 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #000;
+}
+
+span.negro24 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #000;
+}
+
+span.orange14 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: orange;
+}
+
+span.orange16 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: orange;
+}
+
+span.orange20 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: orange;
+}
+
+span.orange24 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: orange;
+}
+
+span.rojo14 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #F00;
+}
+
+span.rojo14 a:hover {/*Color Tamaño Fondo Decoracion*/
+	color: orange;
+}
+
+span.rojo16 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #F00;
+}
+
+span.rojo20 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #F00;
+}
+
+span.rojo24 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #F00;
+}
+
+span.blanco14 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color:#FFF;
+}
+
+span.blanco16 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color:#FFF;
+}
+
+span.blanco20 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color:#FFF;
+}
+
+span.blanco24 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color:#FFF;
+}
+
+
+span.rojo14fBlanco {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background:#F00;
+	float:right;
+}
+
+span.verde14fBlanco {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #909;
+	background:#F00;
+	float:right;
+}
+
+
+span.spanVerde14 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background:#909;
+	
+}
+
+span.spanVerde16 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	background:#909;
+	
+}
+span.spanRojo14 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background:#F00;
+}
+span.spanAmarillo14 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background:#FC0;
+}
+
+span.spanAzul14 {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background:#09F;
+}
+
+
+
+span.rojo17fBlanco {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #FFF;
+	background:#F00;
+	float:right;
+}
+
+span.rojo17fBlancoL {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #FFF;
+	background:#F00;
+	float:left;
+}
+
+span.amarillo12fBlanco {/*Color Tamaño Fondo Decoracion*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	background:#FC3;
+	float:right;
+}
+
+
+
+
+
+/*============FIN COLORES SPAN*/
+
+
+
+
+
+
+#TF {
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#TF.password{
+	font-size: 18px;
+	border: 1px solid #F63;
+	background:#FFC;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#TF.sesion{
+	font-size: 24px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	border: 1px solid #af5898;
+	background:#FFC;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 2px;	
+	
+}
+
+#TF.comentario{
+	font-size: 14px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	border: 1px solid #af5898;
+	background:#F7F7F7;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 2px;
+	font-style: italic;
+	color: #333;
+}
+
+#TF.comentario2{
+	font-size: 16px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	border: 1px solid #af5898;
+	background:#F7F7F7;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 2px;
+	font-style: italic;
+	color: #333;
+}
+
+#LM{
+
+	border: 1px solid #af5898;
+	background:#FFC;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 2px;	
+}
+#LM.table{
+	width: 95%;	
+	font-size: 18px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;	
+}
+
+#LM.maps{
+	width: 90%;	
+	font-size: 18px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;	
+}
+
+.TFAmarillo{
+	width: 90%;	
+	font-size: 18px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	background:#FFC;
+	border: 1px solid #af5898;	
+}
+
+
+.boton_azul{
+	background: #ff00ff; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #ff00ff 0%, #ff00ff 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff00ff), color-stop(100%,#ff00ff)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #ff00ff 0%,#ff00ff 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #ff00ff 0%,#ff00ff 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #ff00ff 0%,#ff00ff 100%); /* IE10+ */
+
+background: linear-gradient(top,  #ff00ff 0%,#ff00ff 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff00ff', endColorstr='#ff00ff',GradientType=0 ); /* IE6-9 */
+
+
+
+
+	padding: 6px;
+	border: 2px solid #909;	
+}
+
+.boton_azul:hover{
+	color:#606;
+	box-shadow: 2px 2px 5px #999;
+	
+}
+.boton_azul a{
+color:#333;	
+}
+
+#LM.local{
+	width: 95%;	
+	font-size: 15px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	
+}
+
+#LM.hora{
+	width: 30%;	
+	font-size: 20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	
+}
+
+
+.iniciarSesion{
+	background:#f1f1f1;
+	border: 2px solid #af5898;
+	box-shadow: 2px 2px 5px #999;
+
+}
+
+
+
+a img {
+border: 0;
+}
+#newSlider {
+	color: #999;
+	height: 270px;
+	width: 370px;
+	margin:left;
+}
+#divMitadIzq {
+	margin-left: 0px;
+	float:left;
+	
+}
+#divMitadDere {
+	float:left;
+	padding-right: 10px;
+	padding-left: 10px;
+	
+}
+
+#contenedorNews{
+	width:800px;
+	height: 310px;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+
+.scroll{
+	width:95%;	
+}
+
+.bordeAzul{
+	border: 1px solid #09F;
+	
+}
+.bordePlomo{
+	border: 1px solid #999;
+	
+}
+.bordeVerde{
+	border: 1px solid #af5898;
+	
+}
+.bordeNegro{
+	border: 1px solid #333;
+	
+}
+
+#color{
+	width:100%;
+	text-align:center;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#333;
+}
+#color.Y{
+	background:#FF6;
+		
+}
+#color.G{
+	background:#0F3;	
+}
+#color.R{
+	background:#F00;
+	color:#FFF;	
+}
+
+#color.B{
+	background:#03C;
+	color:#FFF;	
+}
+
+/*==================SimpleTABLE=========================*/
+#customers
+{
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+width:100%;
+border-collapse:collapse;
+}
+
+#customers a{
+	color:#FFF;
+}
+
+#customers a:hover{
+	color:orange;
+}
+
+#customers td, #customers th 
+{
+font-size:1.2em;
+border:1px solid #bd21bf;
+padding:3px 7px 2px 7px;
+}
+#customers th 
+{
+font-size:1.4em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#c142c9;
+color:#fff;
+}
+#customers tr.alt td 
+{
+color:#000;
+background-color:#dfd0e0;
+}
+
+#customers td.alt
+{
+color:#000;
+background-color:#dfd0e0;
+}
+
+#customers td.alt2
+{
+color:#000;
+background-color:#FFF;
+}
+
+
+#customers tr.alt td2 
+{
+color:#000;
+background-color:#dfd0e0;
+font-size:12px;
+}
+
+#customersMenor
+{
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+width:100%;
+border-collapse:collapse;
+}
+
+#customersMenor a{
+	color:#FFF;
+}
+
+#customersMenor a:hover{
+	color:orange;
+}
+
+#customersMenor td, #customersMenor th 
+{
+font-size:14px;
+border:1px solid #bd21bf;
+padding:3px 7px 2px 7px;
+}
+
+#customersMenor th 
+{
+font-size:14px;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#c142c9;
+color:#fff;
+}
+#customersMenor tr.alt td 
+{
+color:#000;
+background-color:#dfd0e0;
+}
+#customersMenor tr.alt td2 
+{
+color:#000;
+background-color:#dfd0e0;
+font-size:12px;
+}
+
+#customersMenor tr.alt2
+{
+color:#000;
+background-color:#FFC;
+}
+
+/*====================SIMPLE TABLE==============================*/
+
+
+.QOverlay {
+
+	background-color: #000000;
+
+	z-index: 9999;
+
+}
+
+
+
+.QLoader {
+
+	background-color: #CCCCCC;
+
+	height: 1px;
+
+}
+#navController {
+	width: 1150px;
+	margin-right: auto;
+	margin-left: auto;
+	vertical-align: middle;	
+}
+
+
+div.target ul
+{
+
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:11px;
+	
+}
+div.target li
+{
+	padding-left: 4px;
+	cursor: pointer;
+}
+li.simpleon
+{
+	color: green;
+	font-weight: bold;
+}
+li.simpleoff
+{
+	color: red;
+	font-weight: bold;
+}
+
+
+td.hover, #tableone tbody tr:hover
+{
+
+	background-color: LemonChiffon;
+}
+
+td.betterhover, #tabletwo tbody tr:hover
+
+{
+	background: #c142c9;
+}
+
+a.verde20{
+	font-size:20px;
+	color:#909;	
+}
+a.verde20:hover{
+	color:#F90;
+}
+
+.hiddebutton {
+visibility:hidden;
+}
+
+.hiddediv {
+display:none;
+}
+
+h2{
+	font-size:15px;
+}
+.encuesta tbody tr td {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-align: justify;
+	border:1px solid #bd21bf;
+    padding:16px 10px 15px 10px;
+}
+.encuesta tbody .alt {
+	background-color: #dfd0e0;
+}
+
+.alinearVertical{
+line-height: 100px;	
+}

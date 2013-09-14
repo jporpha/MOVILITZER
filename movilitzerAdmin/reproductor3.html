@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+
+  </style>
+  </head>
+  <body>
+
+
+
+
+
+MOVILITZER
+
+
+			<audio id="player" src="filesystem:http://localhost/persistent/Get Down.mp3" controls>
+								Your browser does not support the HTML5 Audio Tag.
+			</audio>
+
+
+
+<script type="text/javascript">
+var audio = document.getElementById("player");
+audio.addEventListener("ended", function() {
+    audio.src = "filesystem:http://localhost/persistent/12 Tell me why 1.mp3";
+    audio.play();
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  	<br>
+  	<br>
+    <audio id="audio2" controls autobuffer>
+      <source src="filesystem:http://localhost/persistent/Get Down.mp3" type="audio/mpeg" />
+        Audio tag not supported
+    </audio>
+
+
+    <br>
+    <button id="play">Play</button>
+    <br>
+    <button id="pause">Pause</button>
+    <br>
+    <button id="duration">Show duration</button>
+
+
+    <div id="duration-log"></div>
+
+
+
+    <script>
+      var song = document.getElementById('audio2');
+      document.getElementById('play').addEventListener('click', function() { song.play(); }, false);
+      document.getElementById('pause').addEventListener('click', function() { song.pause(); }, false);
+      document.getElementById('duration').addEventListener('click', function() { document.querySelector('#duration-log').textContent = song.duration; }, false);
+    </script>
+  </body>
+</html>

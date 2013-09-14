@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Admin | MOVILITZER</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name="description" content="This template is the perfect way to design a website with hundreds of possible features and plugins required while designing/developing a Website. It gives you different layouts and plugins to design a dashboard or a webform. Based on Jquery, the interface is light,responsive and ready to use. Eternity Admin provides custom layouts, error pages and themes to be used with your website. One of the main features of Eternity Admin is that it is compatible with all browsers. With more than 100 different buttons styles and grid layouts, this template becomes even more powerful." />
+
+<meta name="keywords" content="dashboard, template, admin, theme, website, free, layout, web, responsive" />
+
+<link href="css/style.css" rel="stylesheet" type="text/css" charset="utf-8" />
+<link href="css/reset.css" rel="stylesheet" type="text/css"  />
+
+<link rel='stylesheet' type='text/css' href='css/fullcalendar.css' />
+<link rel='stylesheet' type='text/css' href='css/custom.css' />
+
+<script type="text/javascript" src="js/apprise-1.5.min.js"></script>
+<link rel="stylesheet" href="css/apprise.min.css" type="text/css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+
+<link href="css/data-table.css" rel="stylesheet" type="text/css"  />
+
+<script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
+
+<script src="js/jquery-ui-1.8.13.custom.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" src="js/vertlib.min.js"></script><!-- Right Menu Fixed Scroll-->
+<script type="text/javascript" src="js/StickyScroller.min.js"></script><!-- Right Menu Fixed Scroll-->
+
+<script type='text/javascript' src='js/jquery-ui-1.8.13.custom.min.js'></script>
+<script type='text/javascript' src='js/fullcalendar.min.js'></script>
+
+<style type="text/css">
+    h5 { color: #ffffff; } 
+</style>
+
+
+
+
+<script type="text/javascript">
+
+$.getJSON("http://localhost/proyectoMovilitzer/webservice/index.php/movilitzer/obtenerCanciones",
+function (data) {
+    for (var i = 0; i < data.length; i++) {
+        data[i].artista;
+        data[i].cancion;
+        data[i].genero;
+    }
+});
+
+if($session = false)
+{
+  window.alert('Usuario o Password incorrectos')
+ window.location = "http://localhost/proyectoMovilitzer/movilitzerAdmin/admin/" 
+}
+
+</script>
+  
+</head>
+
+
+<body>
+ 
+   <div class="header">
+    
+    <center>
+
+    <img src="images/logo.png" alt="Logo" height="95px" />
+
+    </center>
+      
+      
+   </div>
+   <!--Header-End-->
+   
+   <div class="clear"></div>
+  
+     <div class="tabs-contenor">
+       
+       <div class="profile">
+         <img src="images/user.jpg" alt="User" />
+         <h2>JPORPHA</h2>
+         <h4>Administrador</h4>
+         <h4><a href="#">Logout <img src="images/icons/login.jpg" alt="login" /></a></h4>     
+       </div>
+
+
+       
+       <div class="tabs_links">
+           <ul>
+               <li><a href="#lista-1">Administrar Listas</a></li>
+               <li><a href="#lista-2">Crear Lista</a></li>
+               <li><a href="#lista-3">Configuracion</a></li>
+
+           </ul>
+       </div>
+       
+     </div>
+     <!--Tabs-Box-Ends-->
+   
+       <div id="main">
+                                       
+            <div id="content">
+                        
+              <div class="tab_content" id="lista-1"  >
+
+              <div class="vertical-tabs">
+                            <ul>
+                             <li><a href="#vone"> Lista 1</a></li>
+                             <li><a href="#vtwo"> Lista 2</a></li>
+                             <li><a href="#vthree"> Lista 3</a></li>
+                             <li><a href="#vfour"> Lista 4</a></li>
+                             <li><a href="#vfive"> Lista 5</a></li>
+                            </ul>
+                            
+                    <div class="vertical-tab-content" id="vone">
+                    <h2>Control lista</h2>            
+                    <div class="element-box">
+                    <br>
+
+                    <div id="activar">
+                    <a href="javascript: activarL()"class="button green-button"><i class="icon-music"></i> Activar Lista</a>
+                    </div>
+                    <div id="activado"  style="display:none">
+                    <a href="javascript: desactivarL()" class="button red-button"><i class="icon-music"></i> Desctivar Lista</a>
+                    </div>
+                    
+                    <hr />
+                  </div>
+                    <div class="element-box">
+
+                    <h1> Música Disponible</h1>
+                    
+
+                    <script type="text/javascript">
+                    function activarL(){
+
+
+                      apprise('Listo para comenzar?', {'verify':true,'textYes':'Si','animate' : true}, function(r)
+                      {
+                      if(r){
+                      $("#activar").fadeOut("slow");  
+                      $("#activado").delay(500).fadeIn("slow");
+                          
+                      }else{}
+                       });
+
+                    }
+                     function desactivarL(){
+
+
+                      apprise('Seguro que quiere desactivar la lista?', {'verify':true,'textYes':'Si','animate' : true}, function(r)
+                      {
+                      if(r){
+                      $("#activado").fadeOut("slow");  
+                      $("#activar").delay(500).fadeIn("slow");
+                          
+                      }else{}
+                       });
+
+                    }
+                       
+                    </script>
+                     <br>
+
+
+                     <div id="example_wrapper">
+                     <table cellpadding="0" cellspacing="0" border="1" id="example1" width="100%">
+                      <thead>
+                      <tr>
+                      <th>ARTISTA</th>
+                      <th>CANCION</th>
+                      <th>GENERO</th>
+                      <th></th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+
+                      <tfoot>
+                      <tr>
+                      <th>ARTISTA</th>
+                      <th>CANCION</th>
+                      <th>GENERO</th>
+                      <th></th>
+                      </tr>
+                      </tfoot>
+
+                      </table>
+
+                      </div>
+
+                      <script type="text/javascript">
+                      $(document).ready(function() {
+                          $('#example1').dataTable( {
+                              "bProcessing": true,
+                              "sAjaxSource": "http://localhost/proyectoMovilitzer/webservice/index.php/movilitzer/obtenerCanciones",
+                            "fnRowCallback": function( nRow, aaData, iDisplayIndex ) {
+                            $('td:eq(3)', nRow).html('<a  href="javascript: agregarLista(' + aaData[3] + ')">' +
+                              aaData[4] + '</a>');
+                             return nRow;
+                             },
+                              "bLengthChange": false,
+                              "bFilter": true,
+                              "bAutoWidth": false,
+                              "bJQueryUI": true, //THEME
+                              "iDisplayLength": 10,
+                              "sAjaxDataProp": "aaData"
+                          } );
+                      } );
+
+                      function agregarLista(ids){
+                        $.post("http://localhost/proyectoMovilitzer/webservice/index.php/movilitzer/agregarLista/"+ids);
+                        apprise('Canción agregada con exito a la lista de reproducción.');
+                      }
+
+
+
+
+
+
+
+                      </script>
+
+
+                      
+                  </div>
+                  <!--GRAPH-BOX ENDS-->
+                  
+                  
+                  
+                  <hr />
+                  
+                  
+                  
+                  <div class="element-box">
+                     <h1>Control de música</h1>
+                     
+                     <div class="ticker">
+
+                      
+                         
+                      <audio id="player" src="filesystem:http://localhost/persistent/Get Down.mp3" controls="controls" class="audio-player">
+                      Your browser does not support the HTML5 Audio Tag.
+                      </audio>
+
+                      <script type="text/javascript">
+                      var audio = document.getElementById("player");
+                      audio.addEventListener("ended", function() {
+                          audio.src = "filesystem:http://localhost/persistent/12 Tell me why 1.mp3";
+                          audio.play();
+                      });
+                      </script>
+
+
+
+
+                      <h5>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h5>
+                         
+                     </div><!--TICKER ENDS HERE-->
+                     
+                  </div>
+                  
+                  
+                  
+                  
+                  <hr />
+
+
+                  
+                  
+                  
+                  <div class="element-box">
+                     <h1>Lista de Reproducción</h1>
+                     
+                     <div class="ticker">
+                                    
+                  
+                  <hr />
+
+                </div>
+              </div>
+ 
+                         </div><!--vone-END-->
+                         
+                         <div class="vertical-tab-content" id="vtwo">
+                          <h2>Control lista</h2>  
+
+
+                          </div><!--vtwo-END-->          
+
+                         
+                         <div class="vertical-tab-content" id="vthree">
+                          <h2>Control lista</h2>            
+                   
+                         </div><!--vthree-END-->
+                         
+                         <div class="vertical-tab-content" id="vfour">
+                          <h2>Control lista</h2>            
+                   
+                         </div><!--vfour-END-->
+                         
+                         <div class="vertical-tab-content" id="vfive">
+                          <h2>Control lista</h2>            
+                    
+                         </div><!--vfive-END-->
+
+
+
+
+
+                         
+                    </div><!--verticalTabs-END-->
+
+
+
+               </div>
+               <!--lista-1-END-->
+               
+			   
+			   <div class="tab_content" id="lista-2" >
+               
+
+			   </div>
+         <!--lista-2-END-->
+               
+               
+               
+			   <div class="tab_content" id="lista-3" >
+               
+
+                 
+			   </div>
+         <!--lista-3-END-->             
+               
+         
+          </div>
+          <!--CONTENT-END-->
+         
+         
+        </div>
+        <!--MAIN END--> 
+        
+        <div id="footer">
+          COPYRIGHT &copy; MOVILITZER | ALL RIGHTS RESERVED
+        </div>  
+        
+        
+                                        
+
+</body>
+</html>

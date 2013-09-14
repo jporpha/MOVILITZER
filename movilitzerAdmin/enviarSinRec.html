@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <style>
+
+  </style>
+  </head>
+  <body>
+
+
+
+
+
+MOVILITZER
+<br><br>
+
+			<audio id="player" src="filesystem:http://localhost/persistent/Get Down.mp3" controls>
+								Your browser does not support the HTML5 Audio Tag.
+			</audio>
+
+
+
+<script type="text/javascript">
+var audio = document.getElementById("player");
+audio.addEventListener("ended", function() {
+    audio.src = "filesystem:http://localhost/persistent/12 Tell me why 1.mp3";
+    audio.play();
+});
+</script>
+
+
+<br><br>
+
+
+
+        <div id="formulario">
+            <form  method="post" action="http://localhost/proyectoMovilitzer/webservice/index.php/movilitzer/agregarUsuarioAdmin" id="formdata" name="formdata">
+                <label for="nombre">Nombre: </label><input type="text" name="nombre" id="nombre" required="required"></br>
+                <label for="mail">Mail: </label><input type="text" name="mail" id="mail" required="required"></br>
+                <label for="password">Password: </label><input type="text" name="password" id="password" required="required"></br>
+                <label for="resInfo">Desea recivir informacion: </label><input type="checkbox" name="resInfo" id="resInfo" required="required">
+
+                <button><a href="javascript: submitform()">Submit</a></button>
+                <input type="button" id="botonenviar" value="Enviar">
+            </form>
+        </div>
+        <div id="exito" style="display:none">
+            Sus datos han sido recibidos con éxito.
+        </div>
+
+
+
+<script type="text/javascript">
+
+
+
+$(document).ready( function() {   // Esta parte del código se ejecutará automáticamente cuando la página esté lista.
+    $("#botonenviar").click( function() {     // Con esto establecemos la acción por defecto de nuestro botón de enviar.
+
+      $.post("http://localhost/proyectoMovilitzer/webservice/index.php/movilitzer/agregarUsuarioAdmin",$("#formdata").serialize(),function(res){
+
+        $("#formulario").fadeOut("slow");   // Hacemos desaparecer el div "formulario" con un efecto fadeOut lento.
+        $("#exito").delay(500).fadeIn("slow");   
+        alert("EXSITO");
+
+            });
+
+    });    
+});
+
+function submitform()
+{
+  document.formdata.submit();
+}
+</script>
+
+
+
+
+
+
+
+  	<br>
+  	<br>
+    <audio id="audio2" controls autobuffer>
+      <source src="filesystem:http://localhost/persistent/Get Down.mp3" type="audio/mpeg" />
+        Audio tag not supported
+    </audio>
+
+
+    <br>
+    <button id="play">Play</button>
+    <br>
+    <button id="pause">Pause</button>
+    <br>
+    <button id="duration">Show duration</button>
+
+
+    <div id="duration-log"></div>
+
+
+
+    <script>
+      var song = document.getElementById('audio2');
+      document.getElementById('play').addEventListener('click', function() { song.play(); }, false);
+      document.getElementById('pause').addEventListener('click', function() { song.pause(); }, false);
+      document.getElementById('duration').addEventListener('click', function() { document.querySelector('#duration-log').textContent = song.duration; }, false);
+    </script>
+  </body>
+</html>
